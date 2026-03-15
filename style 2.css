@@ -1,0 +1,145 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; 
+    font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; 
+}
+
+body {
+    background-color: #0a0a0a; 
+    color: #e0e0e0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+
+.tarjeta-container {
+    display: flex;
+    width: 900px;
+    height: 500px;
+    background-color: #141414; 
+    border-radius: 20px; 
+    overflow: hidden;
+    box-shadow: 0 15px 35px rgba(231, 76, 60, 0.1); 
+    border: 1px solid #222; 
+    transition: transform 0.3s ease; 
+}
+
+.tarjeta-container:hover {
+    transform: translateY(-5px);
+}
+
+.caja-foto {
+    flex: 1.2; 
+    
+    
+    
+    background-image: linear-gradient(to bottom, rgba(0,0,0,0.1), rgba(0,0,0,0.7)), url('Chris Cornell.jpg');
+    
+    background-size: cover;
+    background-position: center;
+    position: relative; 
+}
+
+
+.badget-genero {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    background-color: #e74c3c; 
+    color: white;
+    padding: 8px 15px;
+    border-radius: 50px;
+    font-size: 0.75rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+
+.caja-info {
+    flex: 1; 
+    padding: 50px; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.titulo {
+    font-size: 3rem;
+    font-weight: 800;
+    color: #fff;
+    line-height: 1;
+    margin-bottom: 10px;
+}
+
+.subtitulo {
+    font-size: 1.1rem;
+    color: #a0a0a0;
+    font-weight: 300;
+    margin-bottom: 20px;
+}
+
+
+.divisor-rojo {
+    width: 60px;
+    height: 4px;
+    background-color: #e74c3c;
+    margin-bottom: 30px;
+    border-radius: 2px;
+}
+
+.descripcion {
+    font-size: 1rem;
+    line-height: 1.8;
+    color: #ccc;
+    margin-bottom: 30px;
+    font-weight: 300;
+}
+
+
+.seccion-destacada {
+    background-color: #1a1a1a;
+    padding: 20px;
+    border-radius: 12px;
+    border-left: 4px solid #e74c3c; 
+}
+
+.seccion-destacada h3 {
+    font-size: 0.9rem;
+    color: #e74c3c;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 5px;
+}
+
+.album {
+    font-size: 1.2rem;
+    color: #fff;
+    font-weight: 600;
+}
+
+
+@media (max-width: 768px) {
+    .tarjeta-container {
+        flex-direction: column; 
+        width: 100%;
+        height: auto;
+    }
+
+    .caja-foto {
+        height: 300px; 
+    }
+
+    .caja-info {
+        padding: 30px;
+    }
+
+    .titulo {
+        font-size: 2.2rem;
+    }
+}
